@@ -1072,31 +1072,31 @@
         <div class="budget-slider-container">
             <div class="budget-display">
                 <div class="budget-label">Monthly Ad Budget</div>
-                <div class="budget-value" id="budgetDisplay">$5,000</div>
+                <div class="budget-value" id="budgetDisplay">$7,000</div>
             </div>
-            <input type="range" min="500" max="20000" value="5000" step="100" class="slider" id="budgetSlider">
+            <input type="range" min="1000" max="20000" value="7000" step="100" class="slider" id="budgetSlider">
         </div>
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-label">Monthly Clicks</div>
-                <div class="metric-value" id="clicks">4,167</div>
+                <div class="metric-value" id="clicks">8,235</div>
                 <div class="metric-subtext">High-intent visitors</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Monthly Orders</div>
-                <div class="metric-value" id="conversions">146</div>
+                <div class="metric-value" id="conversions">288</div>
                 <div class="metric-subtext">New customers</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Monthly Revenue</div>
-                <div class="metric-value" id="revenue">$9,490</div>
+                <div class="metric-value" id="revenue">$20,160</div>
                 <div class="metric-subtext">From Google Ads</div>
             </div>
             <div class="metric-card roas-card">
                 <div class="metric-label">Return on Ad Spend (ROAS)</div>
-                <div class="metric-value" id="roas">1.90x</div>
-                <div class="metric-subtext">For every $1 spent, you make $<span id="roasSimple">1.90</span></div>
+                <div class="metric-value" id="roas">2.88x</div>
+                <div class="metric-subtext">For every $1 spent, you make $<span id="roasSimple">2.88</span></div>
             </div>
         </div>
 
@@ -1105,7 +1105,7 @@
             <div class="assumptions-list" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
                 <div style="text-align: center;">
                     <label class="input-label">Avg. CPC ($)</label>
-                    <input type="number" id="inputCPC" value="1.20" step="0.10" min="0.10" class="input-field" oninput="updateCalculations()">
+                    <input type="number" id="inputCPC" value="0.85" step="0.10" min="0.10" class="input-field" oninput="updateCalculations()">
                 </div>
                 <div style="text-align: center;">
                     <label class="input-label">Conv. Rate (%)</label>
@@ -1113,7 +1113,7 @@
                 </div>
                 <div style="text-align: center;">
                     <label class="input-label">Avg. Order Value ($)</label>
-                    <input type="number" id="inputAOV" value="65" step="1" min="1" class="input-field" oninput="updateCalculations()">
+                    <input type="number" id="inputAOV" value="70" step="1" min="1" class="input-field" oninput="updateCalculations()">
                 </div>
             </div>
             <p style="color: #B7B3E6; font-size: 11px; margin-top: 12px; font-style: italic;">
@@ -1213,9 +1213,9 @@
 
         function updateCalculations() {
             const budget = parseInt(budgetSlider.value);
-            const avgCPC = parseFloat(document.getElementById('inputCPC').value) || 1.20;
+            const avgCPC = parseFloat(document.getElementById('inputCPC').value) || 0.85;
             const conversionRate = (parseFloat(document.getElementById('inputCVR').value) || 3.5) / 100;
-            const avgOrderValue = parseFloat(document.getElementById('inputAOV').value) || 65;
+            const avgOrderValue = parseFloat(document.getElementById('inputAOV').value) || 70;
 
             const clicks = Math.round(budget / avgCPC);
             const conversions = Math.round(clicks * conversionRate);
