@@ -814,8 +814,8 @@
                 <div class="opp-label">Monthly product searches you could show up for</div>
             </div>
             <div class="opp-card">
-                <div class="opp-num">$0.93</div>
-                <div class="opp-label">Average CPC across top product keywords</div>
+                <div class="opp-num">$0.75</div>
+                <div class="opp-label">Blended CPC including brand + Shopping</div>
             </div>
             <div class="opp-card">
                 <div class="opp-num">3-5%</div>
@@ -1085,31 +1085,31 @@
         <div class="budget-slider-container">
             <div class="budget-display">
                 <div class="budget-label">Monthly Ad Budget</div>
-                <div class="budget-value" id="budgetDisplay">$3,000</div>
+                <div class="budget-value" id="budgetDisplay">$5,000</div>
             </div>
-            <input type="range" min="500" max="10000" value="3000" step="100" class="slider" id="budgetSlider">
+            <input type="range" min="1000" max="20000" value="5000" step="100" class="slider" id="budgetSlider">
         </div>
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-label">Monthly Clicks</div>
-                <div class="metric-value" id="clicks">3,226</div>
+                <div class="metric-value" id="clicks">6,667</div>
                 <div class="metric-subtext">High-intent product searches</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Monthly Orders</div>
-                <div class="metric-value" id="conversions">97</div>
+                <div class="metric-value" id="conversions">233</div>
                 <div class="metric-subtext">New customers</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Monthly Revenue</div>
-                <div class="metric-value" id="revenue">$4,839</div>
+                <div class="metric-value" id="revenue">$12,815</div>
                 <div class="metric-subtext">From Google Ads</div>
             </div>
             <div class="metric-card roas-card">
                 <div class="metric-label">Return on Ad Spend (ROAS)</div>
-                <div class="metric-value" id="roas">1.61x</div>
-                <div class="metric-subtext">For every $1 spent, you make $<span id="roasSimple">1.61</span></div>
+                <div class="metric-value" id="roas">2.56x</div>
+                <div class="metric-subtext">For every $1 spent, you make $<span id="roasSimple">2.56</span></div>
             </div>
         </div>
 
@@ -1118,15 +1118,15 @@
             <div class="assumptions-list" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
                 <div style="text-align: center;">
                     <label class="input-label">Avg. CPC ($)</label>
-                    <input type="number" id="inputCPC" value="0.93" step="0.10" min="0.10" class="input-field" oninput="updateCalculations()">
+                    <input type="number" id="inputCPC" value="0.75" step="0.10" min="0.10" class="input-field" oninput="updateCalculations()">
                 </div>
                 <div style="text-align: center;">
                     <label class="input-label">Conv. Rate (%)</label>
-                    <input type="number" id="inputCVR" value="3.0" step="0.1" min="0.1" class="input-field" oninput="updateCalculations()">
+                    <input type="number" id="inputCVR" value="3.5" step="0.1" min="0.1" class="input-field" oninput="updateCalculations()">
                 </div>
                 <div style="text-align: center;">
                     <label class="input-label">Avg. Order Value ($)</label>
-                    <input type="number" id="inputAOV" value="50" step="1" min="1" class="input-field" oninput="updateCalculations()">
+                    <input type="number" id="inputAOV" value="55" step="1" min="1" class="input-field" oninput="updateCalculations()">
                 </div>
             </div>
             <p style="color: #B7B3E6; font-size: 11px; margin-top: 12px; font-style: italic;">
@@ -1226,9 +1226,9 @@
 
         function updateCalculations() {
             const budget = parseInt(budgetSlider.value);
-            const avgCPC = parseFloat(document.getElementById('inputCPC').value) || 0.93;
-            const conversionRate = (parseFloat(document.getElementById('inputCVR').value) || 3.0) / 100;
-            const avgOrderValue = parseFloat(document.getElementById('inputAOV').value) || 50;
+            const avgCPC = parseFloat(document.getElementById('inputCPC').value) || 0.75;
+            const conversionRate = (parseFloat(document.getElementById('inputCVR').value) || 3.5) / 100;
+            const avgOrderValue = parseFloat(document.getElementById('inputAOV').value) || 55;
 
             const clicks = Math.round(budget / avgCPC);
             const conversions = Math.round(clicks * conversionRate);
