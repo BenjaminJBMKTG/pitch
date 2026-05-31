@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Ads Growth Opportunity | Got Beef × JB Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;800&family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #423ECC;
+            --secondary: #6E63FF;
+            --accent: #C3BCFF;
+            --bg: #0B0B12;
+            --text: #EDEBFF;
+            --muted: #B7B3E6;
+            --card-bg: #151520;
+            --border: #2a2a40;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Kulim Park', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: 0 8px 32px rgba(66, 62, 204, 0.15);
+        }
+        
+        .header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .client-name {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--text);
+            margin: 10px 0 15px;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-size: 22px;
+            color: var(--accent);
+            margin-bottom: 25px;
+        }
+        
+        .meta {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+        
+        h1 {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text);
+            margin: 50px 0 30px;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text);
+            margin: 45px 0 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--secondary);
+            letter-spacing: -0.5px;
+        }
+        
+        h3 {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 35px 0 18px;
+        }
+        
+        p {
+            margin: 18px 0;
+            font-size: 17px;
+            line-height: 1.75;
+            color: var(--text);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(66, 62, 204, 0.15), rgba(110, 99, 255, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 30px;
+            margin: 35px 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, rgba(66, 62, 204, 0.1), rgba(110, 99, 255, 0.05));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(66, 62, 204, 0.25);
+        }
+        
+        .stat-number {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 15px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        thead {
+            background: var(--primary);
+            color: #ffffff;
+        }
+        
+        th {
+            padding: 18px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 16px 18px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+        
+        tbody tr {
+            background: rgba(66, 62, 204, 0.03);
+        }
+        
+        tbody tr:hover {
+            background: rgba(66, 62, 204, 0.1);
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tfoot {
+            background: rgba(66, 62, 204, 0.15);
+            font-weight: 700;
+        }
+        
+        tfoot td {
+            border-bottom: none;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        ul, ol {
+            margin: 18px 0 18px 28px;
+        }
+        
+        li {
+            margin: 12px 0;
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+        
+        li::marker {
+            color: var(--primary);
+        }
+        
+        strong {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .badge-high {
+            background: rgba(66, 62, 204, 0.2);
+            color: var(--accent);
+            border: 1px solid var(--primary);
+        }
+        
+        .badge-medium {
+            background: rgba(110, 99, 255, 0.15);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+        }
+        
+        .badge-low {
+            background: rgba(195, 188, 255, 0.1);
+            color: var(--muted);
+            border: 1px solid var(--border);
+        }
+        
+        .footer {
+            margin-top: 70px;
+            padding-top: 35px;
+            border-top: 2px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        
+        .footer strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 40px;
+            border-radius: 12px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            color: #ffffff;
+            margin-top: 0;
+            font-size: 28px;
+        }
+        
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.95);
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffffff;
+            color: var(--primary);
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 40px;
+            }
+            
+            table {
+                page-break-inside: avoid;
+            }
+            
+            h2 {
+                page-break-after: avoid;
+            }
+            
+            .cta-button {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .client-name {
+                font-size: 36px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 26px;
+            }
+            
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">JB MARKETING</div>
+            <div class="client-name">Got Beef</div>
+            <div class="tagline">Your Google Ads Growth Opportunity</div>
+            <div class="meta">
+                Prepared for: Got Beef Team<br>
+                Date: May 31st, 2026
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>The Opportunity</h3>
+            <p>Got Beef operates in a <strong>$3.74 billion US beef jerky market</strong> growing at 6.5% annually. The premium grass-fed segment you're in is growing even faster at 8-10% per year.</p>
+            <p>Right now, 296,000+ people search for premium beef jerky on Google every month. They're ready to buy. They just haven't found you yet.</p>
+            <p><strong>Google Ads can change that.</strong></p>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-number">$3.74B</div>
+                <div class="stat-label">US Market Size 2026</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">296K</div>
+                <div class="stat-label">Monthly Searches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6.5%</div>
+                <div class="stat-label">Annual Growth Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2-4x</div>
+                <div class="stat-label">Target Return on Ad Spend</div>
+            </div>
+        </div>
+
+        <h2>Why This Works for Got Beef</h2>
+
+        <h3>Your Product is Premium. Your Customers Know It.</h3>
+        <p>When someone searches "grass-fed brisket jerky" or "gourmet beef jerky", they're not looking for Jack Link's at the gas station. They're looking for exactly what you make.</p>
+
+        <p><strong>Your advantages:</strong></p>
+        <ul>
+            <li><strong>Brisket Cut:</strong> Most brands use cheaper cuts. You use brisket. That's a premium positioning competitors can't match.</li>
+            <li><strong>Hand-Cut & All-Natural:</strong> People searching for "healthy beef jerky" or "all-natural" want clean ingredients. You deliver.</li>
+            <li><strong>No MSG, No Nitrates:</strong> Health-conscious buyers actively filter for this. You already have it.</li>
+            <li><strong>Bundle Pricing:</strong> Your 10-15% bundle discount increases average order value naturally.</li>
+        </ul>
+
+        <h2>The Market Opportunity</h2>
+
+        <h3>These Are Real People Searching Right Now</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>What They're Searching</th>
+                    <th>Monthly Searches</th>
+                    <th>Why It Matters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>grass fed beef jerky</strong></td>
+                    <td>12,000</td>
+                    <td>Your exact product category</td>
+                </tr>
+                <tr>
+                    <td><strong>brisket jerky</strong></td>
+                    <td>1,800</td>
+                    <td>Your unique differentiator</td>
+                </tr>
+                <tr>
+                    <td><strong>keto beef jerky</strong></td>
+                    <td>14,500</td>
+                    <td>Your product fits perfectly</td>
+                </tr>
+                <tr>
+                    <td><strong>healthy beef jerky</strong></td>
+                    <td>8,500</td>
+                    <td>Clean label positioning</td>
+                </tr>
+                <tr>
+                    <td><strong>gourmet beef jerky</strong></td>
+                    <td>3,600</td>
+                    <td>Premium positioning match</td>
+                </tr>
+                <tr>
+                    <td><strong>gluten free beef jerky</strong></td>
+                    <td>6,200</td>
+                    <td>You already are</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>That's 46,000+ monthly searches for keywords that describe your product perfectly. And this is just a sample.</p>
+
+        <h2>What to Expect</h2>
+
+        <h3>Conservative Performance Estimates</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Month 1</th>
+                    <th>Month 3</th>
+                    <th>Month 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Monthly Ad Spend</strong></td>
+                    <td>$3,000</td>
+                    <td>$3,000</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Website Visitors</strong></td>
+                    <td>1,000-1,200</td>
+                    <td>1,000-1,200</td>
+                    <td>1,600-2,000</td>
+                </tr>
+                <tr>
+                    <td><strong>New Customers</strong></td>
+                    <td>20-30</td>
+                    <td>50-75</td>
+                    <td>100-150</td>
+                </tr>
+                <tr>
+                    <td><strong>Revenue</strong></td>
+                    <td>$800-$1,500</td>
+                    <td>$4,500-$7,500</td>
+                    <td>$10,000-$15,000</td>
+                </tr>
+                <tr>
+                    <td><strong>ROAS</strong></td>
+                    <td>0.3-0.5x</td>
+                    <td>1.5-2.5x</td>
+                    <td>2.0-3.0x</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Why Month 1 ROAS is lower:</strong> Google Ads has a learning period. We're gathering data, testing ad copy, optimizing keywords. By Month 3, the campaigns hit their stride.</p>
+
+        <div class="highlight-box">
+            <h3>The Real Value: Customer Lifetime Value</h3>
+            <p>These aren't one-time buyers. Premium jerky customers who love your product come back.</p>
+            <p><strong>Industry Average Repeat Rate:</strong> 25-35%<br>
+            <strong>Customer Lifetime Value:</strong> $120-$200 (3-5 repeat purchases)<br>
+            <strong>True ROAS (12 months):</strong> 4-8x when you factor in repeat purchases</p>
+        </div>
+
+        <h2>How We'll Get There</h2>
+
+        <h3>The Campaign Strategy</h3>
+
+        <p><strong>Campaign 1: Brand Protection</strong><br>
+        Protect your brand name from competitors trying to steal your searches.</p>
+
+        <p><strong>Campaign 2: High-Intent Premium</strong><br>
+        Target people searching "grass-fed", "brisket", "gourmet", "all-natural" beef jerky. These are ready-to-buy premium shoppers.</p>
+
+        <p><strong>Campaign 3: Health & Diet Conscious</strong><br>
+        Capture keto, paleo, and health-focused buyers actively seeking clean protein snacks.</p>
+
+        <p><strong>Campaign 4: Discovery & Expansion</strong><br>
+        Test broader keywords, find new customer segments, expand reach over time.</p>
+
+        <h3>What You'll See</h3>
+
+        <p><strong>Week 1-2: Setup & Launch</strong></p>
+        <ul>
+            <li>Campaigns go live</li>
+            <li>Tracking confirmed working</li>
+            <li>Initial data starts flowing</li>
+        </ul>
+
+        <p><strong>Week 3-4: Early Optimization</strong></p>
+        <ul>
+            <li>First conversions coming in</li>
+            <li>Adjusting bids based on performance</li>
+            <li>Testing ad copy variations</li>
+        </ul>
+
+        <p><strong>Month 2: Finding What Works</strong></p>
+        <ul>
+            <li>Identifying winning keywords</li>
+            <li>Pausing underperformers</li>
+            <li>Scaling winners</li>
+        </ul>
+
+        <p><strong>Month 3: Hitting Stride</strong></p>
+        <ul>
+            <li>ROAS targets met</li>
+            <li>Consistent customer flow</li>
+            <li>Decision point: scale up or maintain</li>
+        </ul>
+
+        <h2>What Makes This Different</h2>
+
+        <h3>We Only Do Ecommerce. That's It.</h3>
+
+        <p>Most agencies handle lawyers, plumbers, SaaS, restaurants, whatever pays. We don't.</p>
+
+        <p><strong>We only work with ecommerce brands.</strong> We know product pages. We know cart abandonment. We know AOV optimization. We know shipping offers, bundle pricing, and seasonal spikes.</p>
+
+        <p>When you're our client, you're not explaining ecommerce basics. We already get it.</p>
+
+        <h3>Transparent. Always.</h3>
+
+        <p>You'll know exactly where your money is going:</p>
+        <ul>
+            <li>Weekly performance reports (ROAS, CPA, revenue)</li>
+            <li>Monthly strategy calls</li>
+            <li>Full access to Google Ads account (it's yours, not ours)</li>
+            <li>No surprises, no hidden fees</li>
+        </ul>
+
+        <h2>Next Steps</h2>
+
+        <ol>
+            <li><strong>Book a Strategy Call</strong> – 30 minutes to discuss goals and answer questions</li>
+            <li><strong>Review Your Site</strong> – We'll audit your site for quick conversion wins</li>
+            <li><strong>Set Up Tracking</strong> – Get conversion tracking working properly (critical for success)</li>
+            <li><strong>Launch Campaigns</strong> – Go live within 2 weeks of signing on</li>
+            <li><strong>Weekly Check-Ins</strong> – Stay aligned on performance and optimizations</li>
+        </ol>
+
+        <div class="cta-box">
+            <h3>Ready to Turn Searches into Sales?</h3>
+            <p>296,000+ people are searching for premium beef jerky every month.</p>
+            <p>They're ready to buy. They just need to find you.</p>
+            <a href="mailto:ben@jbmktg.com?subject=Got%20Beef%20-%20Google%20Ads%20Strategy%20Call" class="cta-button">Book Your Strategy Call</a>
+        </div>
+
+        <div class="footer">
+            <p><strong>JB MARKETING</strong> | Google Ads for Ecommerce Brands</p>
+            <p>ben@jbmktg.com | https://jbmktg.com</p>
+        </div>
+    </div>
+</body>
+</html>
